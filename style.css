@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+main {
+    text-align: center;
+}
+#xxx{
+    display: inline-block;
+}
+kbd{
+    border: 1px solid red;
+    width: 4em;
+    height: 4em;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+kbd>button{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+}
+kbd:hover>button{
+    display: inline-block;  
+}
+
+#xxx>div:nth-child(2){
+    margin-left: -20px;
+}
+#xxx>div:nth-child(3){
+    margin-left: -70px;
+}
+.key{
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to bottom,#292929 0%,#111111 100%);
+    color:#c5c5c5;
+    border:1px solid #373737;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808;/*这里调的我脑袋疼*/
+    /*display: inline-flex;这3行达到字居中,后来又不要字居中，要左上角所以删除了
+    align-items: center;
+    justify-content: center;*/
+    margin: 0px 10px;
+    font-size: 14px;
+    font-family: Helvetica;
+    position: relative;
+}
+.key span{
+    position: absolute;
+    left:4px;
+    top:2px;
+}
+.key img{
+    width: 16px;
+    height: 16px;
+    position:absolute;
+    left:4px;
+    bottom: 2px;
+}
+
+.row{
+    margin:20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/*这里用px不可以，必须以vh为单位，viewheight，如果用px就不能是内联了*/
+}
+body{
+    background: gray url(./wal.jpg) no-repeat center center;
+    background-size: cover;
+}
+.wrapper{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
